@@ -29,3 +29,29 @@ If you want to run this project on your own machine, follow these steps:
 ```bash
 git clone [https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git](https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git)
 cd YOUR-REPO-NAME
+2. Create and activate a virtual environment (Recommended)
+
+Windows:
+
+DOS
+python -m venv venv
+.\venv\Scripts\activate
+Mac/Linux:
+
+Bash
+python3 -m venv venv
+source venv/bin/activate
+3. Install dependencies
+
+Bash
+pip install -r requirements.txt
+4. Run database migrations
+
+Bash
+python manage.py migrate
+5. Start the development server
+
+Bash
+python manage.py runserver
+6. Access the application
+Open your web browser and navigate to http://127.0.0.1:8000/ to start compressing files!
